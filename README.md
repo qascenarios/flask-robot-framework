@@ -15,13 +15,6 @@
 ### Test Result
 [Test Report](https://myresult.surge.sh/log.html)
 
----
-
-## Note:
-
-### For Robot Tests:
-- You need to request the username and password to run those tests successfully.
-
 ### Server and Database Setup:
 - The server and the database must be connected at all times for any executed test to be successful.
 
@@ -37,3 +30,4 @@ flask run
 set FLASK_APP=demo_app
 flask init-db
 flask run --host=0.0.0.0 --port=8080
+```
