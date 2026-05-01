@@ -64,7 +64,7 @@ This project demonstrates end-to-end test automation for a Flask REST API and it
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/qascenarios/flask-robot-framework.git
 cd flask-robot-framework
 
 # Install Python dependencies
