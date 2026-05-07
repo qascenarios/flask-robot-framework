@@ -1,0 +1,211 @@
+/* ── Reset & base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ── Nav ── */
+nav {
+  background: #2c3e50;
+  padding: 0 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  height: 56px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover {
+  background: #3d5166;
+}
+
+/* ── Page section ── */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/* ── Flash messages ── */
+ul.flashes {
+  list-style: none;
+  background: #fdecea;
+  border-left: 4px solid #e74c3c;
+  color: #c0392b;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ── Card wrapper ── */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.card h1,
+.card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* ── Form ── */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+form input[type='text'],
+form input[type='password'],
+form input[type='email'] {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  background: #fafbfc;
+}
+
+form input[type='text']:focus,
+form input[type='password']:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
+  background: #fff;
+}
+
+form input[type='submit'] {
+  width: 100%;
+  padding: 0.7rem;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.4rem;
+}
+
+form input[type='submit']:hover {
+  background: #2471a3;
+}
+
+/* ── Welcome / index page ── */
+.welcome-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-box h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.welcome-box p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.welcome-box a {
+  color: #2980b9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.welcome-box a:hover {
+  text-decoration: underline;
+}
+
+/* ── User info table ── */
+.info-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.info-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.info-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-card table th,
+.info-card table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #eaecee;
+}
+
+.info-card table th {
+  color: #7f8c8d;
+  font-weight: 600;
+  width: 40%;
+}
+
+.info-card table td {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.info-card .logout-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-card .logout-link:hover {
+  text-decoration: underline;
+}

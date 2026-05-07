@@ -11,7 +11,7 @@ ${PASSWORD_FIELD}                                           id:password
 ${FIRSTNAME_FIELD}                                          name:firstname
 ${LASTNAME_FIELD}                                           name:lastname
 ${PHONENUMBER_FIELD}                                        name:phone
-${REGISTER_BTN}                                             xpath:/html/body/section/form/input[6]
+${REGISTER_BTN}                                             css:form input[type='submit']
 ${USERNAME}                                                 ${EMPTY}
 ${PASSWORD}                                                 ${EMPTY}
 

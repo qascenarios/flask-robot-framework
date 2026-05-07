@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<div class="card">
+  <h2>Register</h2>
+  <form method="post" action="/register">
+    <input type="text" id="username" name="username" placeholder="Username" required />
+    <input type="password" id="password" name="password" placeholder="Password" required />
+    <input type="text" name="firstname" placeholder="First Name" required />
+    <input type="text" name="lastname" placeholder="Last Name" required />
+    <input type="text" name="phone" placeholder="Phone Number" required />
+    <input type="submit" value="Register" />
+  </form>
+</div>
+{% endblock %}

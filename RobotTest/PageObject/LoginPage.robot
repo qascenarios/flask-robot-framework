@@ -9,9 +9,9 @@ Resource                                                ../PageObject/Generic.ro
 ${LOGIN_BUTTON}                                             xpath:/html/body/nav/ul/li[2]/a
 ${USERNAME_FIELD}                                           id:username
 ${PASSWORD_FIELD}                                           id:password
-${SUBMIT_BUTTON}                                            xpath:/html/body/section/form/input[3]
-${USERNAME}                                                 ${EMPTY}
-${PASSWORD}                                                 ${EMPTY}
+${SUBMIT_BUTTON}                                            css:form input[type='submit']
+${USERNAME}                                                 tester2022
+${PASSWORD}                                                 Tester@@4040
 
 
 
@@ -23,5 +23,5 @@ Enter username and password
             Wait and input text                      ${PASSWORD_FIELD}              ${PASSWORD}
 Click on submit button and close browser
             Wait and click element                   ${SUBMIT_BUTTON}
-            Page Should Contain                      User Information
+            Wait Until Page Contains                 User Information        timeout=10
             Close Browser

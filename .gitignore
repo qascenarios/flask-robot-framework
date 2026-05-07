@@ -1,3 +1,13 @@
 config
 .idea
 venv
+
+# Test results and logs
+output.xml
+log.html
+report.html
+.server.log
+selenium-screenshot-*.png
+
+# Dynamic request-test data
+RequestTests/.latest_users.json
