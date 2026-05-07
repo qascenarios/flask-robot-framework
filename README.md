@@ -187,4 +187,3 @@ The container automatically initialises the SQLite database on first run via `ru
 
 ## Test Report
 
-[View Latest Test Report](https://myresult.surge.sh/log.html)
